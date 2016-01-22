@@ -1,0 +1,4 @@
+C:\Users\Dan\Git\JobWebsite\JobWebsite\Model\bin\Debug\Model.dll
+C:\Users\Dan\Git\JobWebsite\JobWebsite\Model\bin\Debug\Model.pdb
+C:\Users\Dan\Git\JobWebsite\JobWebsite\Model\obj\Debug\Model.dll
+C:\Users\Dan\Git\JobWebsite\JobWebsite\Model\obj\Debug\Model.pdb
