@@ -17,7 +17,7 @@ namespace JobWebsite.Sandbox
             Job[] jobs = new Job[1];
             IFeedConverter feedconverter = InvokeDLL.ExportType<IFeedConverter>(dllpath, "FeedConverter.TestConverter");
             Feed feed = new Feed();
-            feed.id = 1;
+            feed.id = "1";
             feed.url = new Uri("http://www.prospects.ac.uk/rss/All_graduate_jobs.rss");
             lo_feedimporter.Import(ref jobs, feed, feedconverter);
         }

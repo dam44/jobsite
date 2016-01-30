@@ -13,8 +13,17 @@ namespace FeedConverter
     {
         public Job[] Convert(SyndicationFeed feed)
         {
-            Console.WriteLine(Id() + " called!");
-            return new Job[1];
+            Job[] lo_jobs = new Job[feed.Items.Count()];
+            int i = 0;
+            foreach (SyndicationItem item in feed.Items)
+            {
+                lo_jobs[i] = new Job();
+                lo_jobs[i].description = item.Summary.Text;
+                lo_jobs[i].joblink = new Uri(item.Id);
+                i++;
+            }
+       
+            return lo_jobs;
         }
 
         public string Id()
@@ -23,3 +32,6 @@ namespace FeedConverter
         }
     }
 }
+
+
+///(\d*)} group 1, for job id, taken from job link.

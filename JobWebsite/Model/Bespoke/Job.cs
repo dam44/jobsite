@@ -21,5 +21,6 @@ namespace Model
         public DateTime end { get; set; }
         public string salary { get; set; }
         public Uri jobpic { get; set; }
+        public Uri joblink { get; set; }
     }
 }
